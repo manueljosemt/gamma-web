@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -94,18 +96,48 @@
                     <h2 class="section-heading text-uppercase">Tecnologías</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
+                <div id="tecnologias">
+                    <div>
+                        <img src="assets/img/logos/Wordpress-Logo.png"/>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
+                    <div>
+                        <img src="assets/img/logos/Woocommerce-Logo.png"/>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
+                    <div>
+                        <img src="assets/img/logos/Shopify-Logo.png"/>
                     </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
+                    <div>
+                        <img src="assets/img/logos/Html-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Css-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Js-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Ts-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Express-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Node-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/React-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Angular-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Mongo-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Mysql-Logo.png"/>
+                    </div>
+                    <div>
+                        <img src="assets/img/logos/Postgresql-Logo.png"/>
                     </div>
                 </div>
             </div>
@@ -246,6 +278,9 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -255,5 +290,41 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#tecnologias').slick({
+                    dots: false,
+                    arrows: false,
+                    infinite: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 6,
+                            slidesToScroll: 1,
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                        }
+                    ]
+                });          
+            });
+        </script>
     </body>
 </html>
