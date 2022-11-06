@@ -11412,8 +11412,8 @@ header.masthead {
   color: #fff;
   background-image: url("../assets/professional-programmer.webp");
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
+  background-attachment: fixed;
+  background-position: top center;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
