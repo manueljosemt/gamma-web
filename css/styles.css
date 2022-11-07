@@ -11818,7 +11818,7 @@ img.country {
 }
 
 .techno-image{
-  width: 180px;
-  height: 140px;
-  margin-bottom: 20px;
+  width: 180px !important;
+  height: 140px !important;
+  margin-bottom: 20px !important;
 }
